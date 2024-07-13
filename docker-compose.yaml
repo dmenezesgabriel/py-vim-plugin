@@ -1,0 +1,13 @@
+services:
+  vim:
+    build:
+      context: .
+    command: vim /editor
+    tty: true
+    volumes:
+      # mount host dir
+      - ${PWD}:/editor
+      - ./hello-plugin:/root/.vim/pack/mypackage/start/hello-plugin
+      - .vimrc:/root/.vimrc
+    environment:
+      - TERM=xterm-256color
