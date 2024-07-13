@@ -4,6 +4,9 @@ set encoding=UTF-8
 " Don't act like vi
 set nocompatible
 
+" Enable mouse
+set mouse=a
+
 " Indentation size
 set tabstop=2
 
